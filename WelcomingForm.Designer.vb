@@ -44,9 +44,11 @@ Partial Class WelcomingForm
         GroupBox1.Controls.Add(DepositButton)
         GroupBox1.Controls.Add(CreateNewAccountButton)
         GroupBox1.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        GroupBox1.Location = New Point(12, 12)
+        GroupBox1.Location = New Point(14, 16)
+        GroupBox1.Margin = New Padding(3, 4, 3, 4)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(263, 284)
+        GroupBox1.Padding = New Padding(3, 4, 3, 4)
+        GroupBox1.Size = New Size(301, 379)
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         GroupBox1.Text = "Member task"
@@ -54,9 +56,10 @@ Partial Class WelcomingForm
         ' CheckBalanceButton
         ' 
         CheckBalanceButton.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        CheckBalanceButton.Location = New Point(19, 164)
+        CheckBalanceButton.Location = New Point(22, 245)
+        CheckBalanceButton.Margin = New Padding(3, 4, 3, 4)
         CheckBalanceButton.Name = "CheckBalanceButton"
-        CheckBalanceButton.Size = New Size(158, 41)
+        CheckBalanceButton.Size = New Size(181, 45)
         CheckBalanceButton.TabIndex = 3
         CheckBalanceButton.Text = "Check balance"
         CheckBalanceButton.UseVisualStyleBackColor = True
@@ -64,9 +67,10 @@ Partial Class WelcomingForm
         ' WithdrawButton
         ' 
         WithdrawButton.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        WithdrawButton.Location = New Point(19, 115)
+        WithdrawButton.Location = New Point(22, 173)
+        WithdrawButton.Margin = New Padding(3, 4, 3, 4)
         WithdrawButton.Name = "WithdrawButton"
-        WithdrawButton.Size = New Size(158, 37)
+        WithdrawButton.Size = New Size(181, 45)
         WithdrawButton.TabIndex = 2
         WithdrawButton.Text = "Withdraw amount"
         WithdrawButton.UseVisualStyleBackColor = True
@@ -74,9 +78,10 @@ Partial Class WelcomingForm
         ' TransferButton
         ' 
         TransferButton.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        TransferButton.Location = New Point(19, 211)
+        TransferButton.Location = New Point(22, 317)
+        TransferButton.Margin = New Padding(3, 4, 3, 4)
         TransferButton.Name = "TransferButton"
-        TransferButton.Size = New Size(158, 42)
+        TransferButton.Size = New Size(181, 45)
         TransferButton.TabIndex = 0
         TransferButton.Text = "Transfer amount"
         TransferButton.UseVisualStyleBackColor = True
@@ -84,9 +89,10 @@ Partial Class WelcomingForm
         ' DepositButton
         ' 
         DepositButton.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        DepositButton.Location = New Point(19, 71)
+        DepositButton.Location = New Point(22, 101)
+        DepositButton.Margin = New Padding(3, 4, 3, 4)
         DepositButton.Name = "DepositButton"
-        DepositButton.Size = New Size(158, 38)
+        DepositButton.Size = New Size(181, 45)
         DepositButton.TabIndex = 1
         DepositButton.Text = "Deposit amount"
         DepositButton.UseVisualStyleBackColor = True
@@ -94,9 +100,10 @@ Partial Class WelcomingForm
         ' CreateNewAccountButton
         ' 
         CreateNewAccountButton.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        CreateNewAccountButton.Location = New Point(19, 22)
+        CreateNewAccountButton.Location = New Point(22, 29)
+        CreateNewAccountButton.Margin = New Padding(3, 4, 3, 4)
         CreateNewAccountButton.Name = "CreateNewAccountButton"
-        CreateNewAccountButton.Size = New Size(158, 34)
+        CreateNewAccountButton.Size = New Size(181, 45)
         CreateNewAccountButton.TabIndex = 0
         CreateNewAccountButton.Text = "Create new account"
         CreateNewAccountButton.UseVisualStyleBackColor = True
@@ -107,9 +114,11 @@ Partial Class WelcomingForm
         GroupBox2.Controls.Add(LoanButton)
         GroupBox2.Controls.Add(TransactionsButton)
         GroupBox2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        GroupBox2.Location = New Point(449, 22)
+        GroupBox2.Location = New Point(513, 29)
+        GroupBox2.Margin = New Padding(3, 4, 3, 4)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(278, 263)
+        GroupBox2.Padding = New Padding(3, 4, 3, 4)
+        GroupBox2.Size = New Size(318, 351)
         GroupBox2.TabIndex = 1
         GroupBox2.TabStop = False
         GroupBox2.Text = "Management"
@@ -117,9 +126,10 @@ Partial Class WelcomingForm
         ' AccountDetailsButton
         ' 
         AccountDetailsButton.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        AccountDetailsButton.Location = New Point(40, 113)
+        AccountDetailsButton.Location = New Point(46, 161)
+        AccountDetailsButton.Margin = New Padding(3, 4, 3, 4)
         AccountDetailsButton.Name = "AccountDetailsButton"
-        AccountDetailsButton.Size = New Size(136, 42)
+        AccountDetailsButton.Size = New Size(155, 45)
         AccountDetailsButton.TabIndex = 3
         AccountDetailsButton.Text = "Account details"
         AccountDetailsButton.UseVisualStyleBackColor = True
@@ -127,9 +137,10 @@ Partial Class WelcomingForm
         ' LoanButton
         ' 
         LoanButton.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        LoanButton.Location = New Point(40, 67)
+        LoanButton.Location = New Point(46, 99)
+        LoanButton.Margin = New Padding(3, 4, 3, 4)
         LoanButton.Name = "LoanButton"
-        LoanButton.Size = New Size(136, 40)
+        LoanButton.Size = New Size(155, 45)
         LoanButton.TabIndex = 2
         LoanButton.Text = "Borrow Loan"
         LoanButton.UseVisualStyleBackColor = True
@@ -137,20 +148,22 @@ Partial Class WelcomingForm
         ' TransactionsButton
         ' 
         TransactionsButton.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        TransactionsButton.Location = New Point(40, 22)
+        TransactionsButton.Location = New Point(46, 37)
+        TransactionsButton.Margin = New Padding(3, 4, 3, 4)
         TransactionsButton.Name = "TransactionsButton"
-        TransactionsButton.Size = New Size(136, 39)
+        TransactionsButton.Size = New Size(155, 45)
         TransactionsButton.TabIndex = 1
         TransactionsButton.Text = "Transactions"
         TransactionsButton.UseVisualStyleBackColor = True
         ' 
         ' WelcomingForm
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(753, 356)
+        ClientSize = New Size(861, 475)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "WelcomingForm"
         Text = "Investor Bank"
         GroupBox1.ResumeLayout(False)
