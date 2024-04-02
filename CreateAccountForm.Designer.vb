@@ -38,20 +38,25 @@ Partial Class CreateAccountForm
         PictureBox1 = New PictureBox()
         GroupBox2 = New GroupBox()
         PictureBox2 = New PictureBox()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
+        FirstName = New TextBox()
+        AccountNumber = New TextBox()
+        AccountTitle = New TextBox()
         MaleRadioButton = New RadioButton()
         FemaleRadioButton = New RadioButton()
-        OtherRadioButton = New RadioButton()
-        TextBox5 = New TextBox()
-        TextBox6 = New TextBox()
-        TextBox9 = New TextBox()
-        TextBox10 = New TextBox()
+        Nationality = New TextBox()
+        PostalAddress = New TextBox()
+        Occupation = New TextBox()
+        InitialDeposit = New TextBox()
         CreateAccountButton = New Button()
-        ComboBox1 = New ComboBox()
-        ComboBox2 = New ComboBox()
-        ComboBox3 = New ComboBox()
+        PhoneNumber = New ComboBox()
+        EmailAddress = New ComboBox()
+        Label12 = New Label()
+        NationalID = New TextBox()
+        Label13 = New Label()
+        Label14 = New Label()
+        SecondName = New TextBox()
+        Surname = New TextBox()
+        DateOfBirth = New DateTimePicker()
         GroupBox1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox2.SuspendLayout()
@@ -61,16 +66,16 @@ Partial Class CreateAccountForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(12, 9)
+        Label1.Location = New Point(13, 26)
         Label1.Name = "Label1"
-        Label1.Size = New Size(157, 25)
+        Label1.Size = New Size(111, 25)
         Label1.TabIndex = 0
-        Label1.Text = "Customer Name:"
+        Label1.Text = "First Name:"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(12, 41)
+        Label2.Location = New Point(8, 238)
         Label2.Name = "Label2"
         Label2.Size = New Size(165, 25)
         Label2.TabIndex = 1
@@ -79,7 +84,7 @@ Partial Class CreateAccountForm
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(12, 71)
+        Label3.Location = New Point(7, 284)
         Label3.Name = "Label3"
         Label3.Size = New Size(130, 25)
         Label3.TabIndex = 2
@@ -88,7 +93,7 @@ Partial Class CreateAccountForm
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(12, 104)
+        Label4.Location = New Point(12, 337)
         Label4.Name = "Label4"
         Label4.Size = New Size(80, 25)
         Label4.TabIndex = 3
@@ -97,7 +102,7 @@ Partial Class CreateAccountForm
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(13, 136)
+        Label5.Location = New Point(6, 386)
         Label5.Name = "Label5"
         Label5.Size = New Size(131, 25)
         Label5.TabIndex = 4
@@ -106,7 +111,7 @@ Partial Class CreateAccountForm
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(13, 167)
+        Label6.Location = New Point(11, 435)
         Label6.Name = "Label6"
         Label6.Size = New Size(113, 25)
         Label6.TabIndex = 5
@@ -115,7 +120,7 @@ Partial Class CreateAccountForm
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(12, 196)
+        Label7.Location = New Point(9, 484)
         Label7.Name = "Label7"
         Label7.Size = New Size(141, 25)
         Label7.TabIndex = 6
@@ -124,7 +129,7 @@ Partial Class CreateAccountForm
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Location = New Point(12, 228)
+        Label8.Location = New Point(8, 522)
         Label8.Name = "Label8"
         Label8.Size = New Size(148, 25)
         Label8.TabIndex = 7
@@ -133,7 +138,7 @@ Partial Class CreateAccountForm
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(12, 269)
+        Label9.Location = New Point(7, 562)
         Label9.Name = "Label9"
         Label9.Size = New Size(137, 25)
         Label9.TabIndex = 8
@@ -142,7 +147,7 @@ Partial Class CreateAccountForm
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Location = New Point(13, 315)
+        Label10.Location = New Point(9, 605)
         Label10.Name = "Label10"
         Label10.Size = New Size(115, 25)
         Label10.TabIndex = 9
@@ -151,7 +156,7 @@ Partial Class CreateAccountForm
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Location = New Point(13, 360)
+        Label11.Location = New Point(7, 647)
         Label11.Name = "Label11"
         Label11.Size = New Size(137, 25)
         Label11.TabIndex = 10
@@ -203,34 +208,34 @@ Partial Class CreateAccountForm
         PictureBox2.TabIndex = 0
         PictureBox2.TabStop = False
         ' 
-        ' TextBox1
+        ' FirstName
         ' 
-        TextBox1.Location = New Point(182, 9)
-        TextBox1.Multiline = True
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(190, 23)
-        TextBox1.TabIndex = 13
+        FirstName.Location = New Point(182, 9)
+        FirstName.Multiline = True
+        FirstName.Name = "FirstName"
+        FirstName.Size = New Size(250, 42)
+        FirstName.TabIndex = 13
         ' 
-        ' TextBox2
+        ' AccountNumber
         ' 
-        TextBox2.Location = New Point(182, 38)
-        TextBox2.Multiline = True
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(190, 23)
-        TextBox2.TabIndex = 14
+        AccountNumber.Location = New Point(182, 229)
+        AccountNumber.Multiline = True
+        AccountNumber.Name = "AccountNumber"
+        AccountNumber.Size = New Size(250, 42)
+        AccountNumber.TabIndex = 14
         ' 
-        ' TextBox3
+        ' AccountTitle
         ' 
-        TextBox3.Location = New Point(182, 71)
-        TextBox3.Multiline = True
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(190, 23)
-        TextBox3.TabIndex = 15
+        AccountTitle.Location = New Point(182, 284)
+        AccountTitle.Multiline = True
+        AccountTitle.Name = "AccountTitle"
+        AccountTitle.Size = New Size(250, 42)
+        AccountTitle.TabIndex = 15
         ' 
         ' MaleRadioButton
         ' 
         MaleRadioButton.AutoSize = True
-        MaleRadioButton.Location = New Point(182, 100)
+        MaleRadioButton.Location = New Point(182, 333)
         MaleRadioButton.Name = "MaleRadioButton"
         MaleRadioButton.Size = New Size(76, 29)
         MaleRadioButton.TabIndex = 16
@@ -241,7 +246,7 @@ Partial Class CreateAccountForm
         ' FemaleRadioButton
         ' 
         FemaleRadioButton.AutoSize = True
-        FemaleRadioButton.Location = New Point(253, 102)
+        FemaleRadioButton.Location = New Point(277, 333)
         FemaleRadioButton.Name = "FemaleRadioButton"
         FemaleRadioButton.Size = New Size(95, 29)
         FemaleRadioButton.TabIndex = 17
@@ -249,103 +254,143 @@ Partial Class CreateAccountForm
         FemaleRadioButton.Text = "Female"
         FemaleRadioButton.UseVisualStyleBackColor = True
         ' 
-        ' OtherRadioButton
+        ' Nationality
         ' 
-        OtherRadioButton.AutoSize = True
-        OtherRadioButton.Location = New Point(335, 100)
-        OtherRadioButton.Name = "OtherRadioButton"
-        OtherRadioButton.Size = New Size(82, 29)
-        OtherRadioButton.TabIndex = 18
-        OtherRadioButton.TabStop = True
-        OtherRadioButton.Text = "Other"
-        OtherRadioButton.UseVisualStyleBackColor = True
+        Nationality.Location = New Point(182, 421)
+        Nationality.Multiline = True
+        Nationality.Name = "Nationality"
+        Nationality.Size = New Size(250, 39)
+        Nationality.TabIndex = 20
         ' 
-        ' TextBox5
+        ' PostalAddress
         ' 
-        TextBox5.Location = New Point(182, 173)
-        TextBox5.Multiline = True
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(190, 23)
-        TextBox5.TabIndex = 20
+        PostalAddress.Location = New Point(182, 470)
+        PostalAddress.Multiline = True
+        PostalAddress.Name = "PostalAddress"
+        PostalAddress.Size = New Size(250, 39)
+        PostalAddress.TabIndex = 21
         ' 
-        ' TextBox6
+        ' Occupation
         ' 
-        TextBox6.Location = New Point(182, 203)
-        TextBox6.Multiline = True
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(190, 23)
-        TextBox6.TabIndex = 21
+        Occupation.Location = New Point(182, 605)
+        Occupation.Name = "Occupation"
+        Occupation.Size = New Size(250, 32)
+        Occupation.TabIndex = 24
         ' 
-        ' TextBox9
+        ' InitialDeposit
         ' 
-        TextBox9.Location = New Point(184, 313)
-        TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(190, 32)
-        TextBox9.TabIndex = 24
-        ' 
-        ' TextBox10
-        ' 
-        TextBox10.Location = New Point(184, 352)
-        TextBox10.Multiline = True
-        TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(190, 23)
-        TextBox10.TabIndex = 25
+        InitialDeposit.Location = New Point(182, 647)
+        InitialDeposit.Multiline = True
+        InitialDeposit.Name = "InitialDeposit"
+        InitialDeposit.Size = New Size(250, 32)
+        InitialDeposit.TabIndex = 25
         ' 
         ' CreateAccountButton
         ' 
-        CreateAccountButton.Location = New Point(563, 346)
+        CreateAccountButton.Location = New Point(512, 641)
         CreateAccountButton.Name = "CreateAccountButton"
-        CreateAccountButton.Size = New Size(158, 37)
+        CreateAccountButton.Size = New Size(209, 37)
         CreateAccountButton.TabIndex = 26
         CreateAccountButton.Text = "Create Account"
         CreateAccountButton.UseVisualStyleBackColor = True
         ' 
-        ' ComboBox1
+        ' PhoneNumber
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"+253", "+254", "+233", "+44", "+280", "+244"})
-        ComboBox1.Location = New Point(182, 233)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(190, 33)
-        ComboBox1.TabIndex = 27
+        PhoneNumber.FormattingEnabled = True
+        PhoneNumber.Items.AddRange(New Object() {"+253", "+254", "+233", "+44", "+280", "+244"})
+        PhoneNumber.Location = New Point(182, 519)
+        PhoneNumber.Name = "PhoneNumber"
+        PhoneNumber.Size = New Size(250, 33)
+        PhoneNumber.TabIndex = 27
         ' 
-        ' ComboBox2
+        ' EmailAddress
         ' 
-        ComboBox2.FormattingEnabled = True
-        ComboBox2.Items.AddRange(New Object() {"1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005"})
-        ComboBox2.Location = New Point(182, 133)
-        ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(190, 33)
-        ComboBox2.TabIndex = 28
+        EmailAddress.FormattingEnabled = True
+        EmailAddress.Items.AddRange(New Object() {"@gmail.com", "@yahoo.com", "@go.ke"})
+        EmailAddress.Location = New Point(182, 562)
+        EmailAddress.Name = "EmailAddress"
+        EmailAddress.Size = New Size(250, 33)
+        EmailAddress.TabIndex = 29
         ' 
-        ' ComboBox3
+        ' Label12
         ' 
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Items.AddRange(New Object() {"@gmail.com", "@yahoo.com", "@go.ke"})
-        ComboBox3.Location = New Point(184, 273)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(190, 33)
-        ComboBox3.TabIndex = 29
+        Label12.AutoSize = True
+        Label12.Location = New Point(13, 177)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(111, 25)
+        Label12.TabIndex = 0
+        Label12.Text = "National ID"
+        ' 
+        ' NationalID
+        ' 
+        NationalID.Location = New Point(182, 174)
+        NationalID.Multiline = True
+        NationalID.Name = "NationalID"
+        NationalID.Size = New Size(250, 42)
+        NationalID.TabIndex = 13
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Location = New Point(13, 67)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(136, 25)
+        Label13.TabIndex = 0
+        Label13.Text = "Second Name:"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Location = New Point(13, 122)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(88, 25)
+        Label14.TabIndex = 0
+        Label14.Text = "Surname"
+        ' 
+        ' SecondName
+        ' 
+        SecondName.Location = New Point(182, 64)
+        SecondName.Multiline = True
+        SecondName.Name = "SecondName"
+        SecondName.Size = New Size(250, 42)
+        SecondName.TabIndex = 13
+        ' 
+        ' Surname
+        ' 
+        Surname.Location = New Point(182, 119)
+        Surname.Multiline = True
+        Surname.Name = "Surname"
+        Surname.Size = New Size(250, 42)
+        Surname.TabIndex = 13
+        ' 
+        ' DateOfBirth
+        ' 
+        DateOfBirth.Location = New Point(182, 379)
+        DateOfBirth.Name = "DateOfBirth"
+        DateOfBirth.Size = New Size(250, 32)
+        DateOfBirth.TabIndex = 30
         ' 
         ' CreateAccountForm
         ' 
         AutoScaleDimensions = New SizeF(11F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(755, 405)
-        Controls.Add(ComboBox3)
-        Controls.Add(ComboBox2)
-        Controls.Add(ComboBox1)
+        ClientSize = New Size(755, 686)
+        Controls.Add(DateOfBirth)
+        Controls.Add(EmailAddress)
+        Controls.Add(PhoneNumber)
         Controls.Add(CreateAccountButton)
-        Controls.Add(TextBox10)
-        Controls.Add(TextBox9)
-        Controls.Add(TextBox6)
-        Controls.Add(TextBox5)
-        Controls.Add(OtherRadioButton)
+        Controls.Add(InitialDeposit)
+        Controls.Add(Occupation)
+        Controls.Add(PostalAddress)
+        Controls.Add(Nationality)
         Controls.Add(FemaleRadioButton)
         Controls.Add(MaleRadioButton)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(AccountTitle)
+        Controls.Add(AccountNumber)
+        Controls.Add(NationalID)
+        Controls.Add(Surname)
+        Controls.Add(SecondName)
+        Controls.Add(FirstName)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
         Controls.Add(Label11)
@@ -358,6 +403,9 @@ Partial Class CreateAccountForm
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label2)
+        Controls.Add(Label12)
+        Controls.Add(Label14)
+        Controls.Add(Label13)
         Controls.Add(Label1)
         Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
@@ -386,19 +434,24 @@ Partial Class CreateAccountForm
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents FirstName As TextBox
+    Friend WithEvents AccountNumber As TextBox
+    Friend WithEvents AccountTitle As TextBox
     Friend WithEvents MaleRadioButton As RadioButton
     Friend WithEvents FemaleRadioButton As RadioButton
-    Friend WithEvents OtherRadioButton As RadioButton
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Nationality As TextBox
+    Friend WithEvents PostalAddress As TextBox
+    Friend WithEvents Occupation As TextBox
+    Friend WithEvents InitialDeposit As TextBox
     Friend WithEvents CreateAccountButton As Button
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents PhoneNumber As ComboBox
+    Friend WithEvents EmailAddress As ComboBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label12 As Label
+    Friend WithEvents NationalID As TextBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents SecondName As TextBox
+    Friend WithEvents Surname As TextBox
+    Friend WithEvents DateOfBirth As DateTimePicker
 End Class
