@@ -23,16 +23,15 @@ Partial Class LoanForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         GroupBox1 = New GroupBox()
-        GroupBox2 = New GroupBox()
-        ExitLoanButton = New Button()
-        Label1 = New Label()
-        Label2 = New Label()
-        Label3 = New Label()
-        Label5 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
         TextBox5 = New TextBox()
+        TextBox3 = New TextBox()
+        TextBox2 = New TextBox()
+        TextBox1 = New TextBox()
+        Label5 = New Label()
+        Label3 = New Label()
+        Label2 = New Label()
+        Label1 = New Label()
+        GroupBox2 = New GroupBox()
         TextBox6 = New TextBox()
         TextBox7 = New TextBox()
         TextBox8 = New TextBox()
@@ -43,6 +42,7 @@ Partial Class LoanForm
         Label8 = New Label()
         Label9 = New Label()
         Label10 = New Label()
+        ExitLoanButton = New Button()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         SuspendLayout()
@@ -58,12 +58,82 @@ Partial Class LoanForm
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        GroupBox1.Location = New Point(0, 12)
+        GroupBox1.Location = New Point(0, 16)
+        GroupBox1.Margin = New Padding(3, 4, 3, 4)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(372, 297)
+        GroupBox1.Padding = New Padding(3, 4, 3, 4)
+        GroupBox1.Size = New Size(425, 396)
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         GroupBox1.Text = "Borrow Loan"
+        ' 
+        ' TextBox5
+        ' 
+        TextBox5.Location = New Point(179, 315)
+        TextBox5.Margin = New Padding(3, 4, 3, 4)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(188, 32)
+        TextBox5.TabIndex = 9
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Location = New Point(179, 185)
+        TextBox3.Margin = New Padding(3, 4, 3, 4)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(188, 32)
+        TextBox3.TabIndex = 7
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(179, 120)
+        TextBox2.Margin = New Padding(3, 4, 3, 4)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(188, 32)
+        TextBox2.TabIndex = 6
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(179, 60)
+        TextBox1.Margin = New Padding(3, 4, 3, 4)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(188, 32)
+        TextBox1.TabIndex = 5
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(24, 309)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(129, 25)
+        Label5.TabIndex = 4
+        Label5.Text = "Loan Interest:"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(17, 181)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(133, 25)
+        Label3.TabIndex = 2
+        Label3.Text = "Loan Amount:"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(17, 120)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(165, 25)
+        Label2.TabIndex = 1
+        Label2.Text = "Account Number:"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(17, 64)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(157, 25)
+        Label1.TabIndex = 0
+        Label1.Text = "Customer Name:"
         ' 
         ' GroupBox2
         ' 
@@ -78,174 +148,119 @@ Partial Class LoanForm
         GroupBox2.Controls.Add(Label9)
         GroupBox2.Controls.Add(Label10)
         GroupBox2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        GroupBox2.Location = New Point(399, 22)
+        GroupBox2.Location = New Point(456, 29)
+        GroupBox2.Margin = New Padding(3, 4, 3, 4)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(345, 287)
+        GroupBox2.Padding = New Padding(3, 4, 3, 4)
+        GroupBox2.Size = New Size(394, 383)
         GroupBox2.TabIndex = 1
         GroupBox2.TabStop = False
         GroupBox2.Text = "Pay Loan"
         ' 
-        ' ExitLoanButton
-        ' 
-        ExitLoanButton.Location = New Point(511, 315)
-        ExitLoanButton.Name = "ExitLoanButton"
-        ExitLoanButton.Size = New Size(149, 36)
-        ExitLoanButton.TabIndex = 2
-        ExitLoanButton.Text = "E&xit"
-        ExitLoanButton.UseVisualStyleBackColor = True
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(15, 48)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(123, 20)
-        Label1.TabIndex = 0
-        Label1.Text = "Customer Name:"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(15, 90)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(131, 20)
-        Label2.TabIndex = 1
-        Label2.Text = "Account Number:"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(15, 136)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(105, 20)
-        Label3.TabIndex = 2
-        Label3.Text = "Loan Amount:"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(21, 232)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(101, 20)
-        Label5.TabIndex = 4
-        Label5.Text = "Loan Interest:"
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(157, 45)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(165, 27)
-        TextBox1.TabIndex = 5
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Location = New Point(157, 90)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(165, 27)
-        TextBox2.TabIndex = 6
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.Location = New Point(157, 139)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(165, 27)
-        TextBox3.TabIndex = 7
-        ' 
-        ' TextBox5
-        ' 
-        TextBox5.Location = New Point(157, 236)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(165, 27)
-        TextBox5.TabIndex = 9
-        ' 
         ' TextBox6
         ' 
-        TextBox6.Location = New Point(161, 225)
+        TextBox6.Location = New Point(184, 300)
+        TextBox6.Margin = New Padding(3, 4, 3, 4)
         TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(165, 27)
+        TextBox6.Size = New Size(188, 32)
         TextBox6.TabIndex = 19
         ' 
         ' TextBox7
         ' 
-        TextBox7.Location = New Point(161, 171)
+        TextBox7.Location = New Point(184, 228)
+        TextBox7.Margin = New Padding(3, 4, 3, 4)
         TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(165, 27)
+        TextBox7.Size = New Size(188, 32)
         TextBox7.TabIndex = 18
         ' 
         ' TextBox8
         ' 
-        TextBox8.Location = New Point(161, 128)
+        TextBox8.Location = New Point(184, 171)
+        TextBox8.Margin = New Padding(3, 4, 3, 4)
         TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(165, 27)
+        TextBox8.Size = New Size(188, 32)
         TextBox8.TabIndex = 17
         ' 
         ' TextBox9
         ' 
-        TextBox9.Location = New Point(161, 79)
+        TextBox9.Location = New Point(184, 105)
+        TextBox9.Margin = New Padding(3, 4, 3, 4)
         TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(165, 27)
+        TextBox9.Size = New Size(188, 32)
         TextBox9.TabIndex = 16
         ' 
         ' TextBox10
         ' 
-        TextBox10.Location = New Point(161, 34)
+        TextBox10.Location = New Point(184, 45)
+        TextBox10.Margin = New Padding(3, 4, 3, 4)
         TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(165, 27)
+        TextBox10.Size = New Size(188, 32)
         TextBox10.TabIndex = 15
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(25, 221)
+        Label6.Location = New Point(29, 295)
         Label6.Name = "Label6"
-        Label6.Size = New Size(117, 20)
+        Label6.Size = New Size(145, 25)
         Label6.TabIndex = 14
         Label6.Text = "Total Loan Paid:"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(19, 171)
+        Label7.Location = New Point(22, 228)
         Label7.Name = "Label7"
-        Label7.Size = New Size(122, 20)
+        Label7.Size = New Size(156, 25)
         Label7.TabIndex = 13
         Label7.Text = "MonthlyInterest:"
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Location = New Point(19, 125)
+        Label8.Location = New Point(22, 167)
         Label8.Name = "Label8"
-        Label8.Size = New Size(105, 20)
+        Label8.Size = New Size(133, 25)
         Label8.TabIndex = 12
         Label8.Text = "Loan Amount:"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(19, 79)
+        Label9.Location = New Point(22, 105)
         Label9.Name = "Label9"
-        Label9.Size = New Size(131, 20)
+        Label9.Size = New Size(165, 25)
         Label9.TabIndex = 11
         Label9.Text = "Account Number:"
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Location = New Point(19, 37)
+        Label10.Location = New Point(22, 49)
         Label10.Name = "Label10"
-        Label10.Size = New Size(123, 20)
+        Label10.Size = New Size(157, 25)
         Label10.TabIndex = 10
         Label10.Text = "Customer Name:"
         ' 
+        ' ExitLoanButton
+        ' 
+        ExitLoanButton.Location = New Point(584, 420)
+        ExitLoanButton.Margin = New Padding(3, 4, 3, 4)
+        ExitLoanButton.Name = "ExitLoanButton"
+        ExitLoanButton.Size = New Size(170, 48)
+        ExitLoanButton.TabIndex = 2
+        ExitLoanButton.Text = "E&xit"
+        ExitLoanButton.UseVisualStyleBackColor = True
+        ' 
         ' LoanForm
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(756, 356)
+        ClientSize = New Size(864, 475)
         Controls.Add(ExitLoanButton)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "LoanForm"
         Text = "Loan Form"
         GroupBox1.ResumeLayout(False)
