@@ -22,7 +22,7 @@ Public Class WithdrawalForm
     End Sub
 
     Private Function GetAccountBalance(accountNumber As Integer) As Decimal
-        Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;" & "Data Source=C:\Users\markk\source\repos\BankSystem_\BankingSystem1.accdb;"
+        Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;" & "Data Source= C:\Users\user\source\repos\BankSystem\BankingSystem1.accdb;"
         Dim connection As New OleDbConnection(connectionString)
         Dim command As New OleDbCommand("SELECT Balance FROM Accounts WHERE AccountNumber = @accountNumber", connection)
         command.Parameters.AddWithValue("@accountNumber", accountNumber)
@@ -41,7 +41,7 @@ Public Class WithdrawalForm
     End Function
 
     Private Function UpdateAccountBalance(accountNumber As Integer, amount As Decimal) As Boolean
-        Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;" & "Data Source=C:\Users\markk\source\repos\BankSystem_\BankingSystem1.accdb;"
+        Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;" & "Data Source=C:\Users\user\source\repos\BankSystem\BankingSystem1.accdb;"
         Dim connection As New OleDbConnection(connectionString)
         Dim command As New OleDbCommand("UPDATE Accounts SET Balance = Balance + @amount WHERE AccountNumber = @accountNumber", connection)
         command.Parameters.AddWithValue("@accountNumber", accountNumber)
