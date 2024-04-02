@@ -38,6 +38,7 @@ Public Class CreateAccountForm
         'Format the date
         Dim SelectedDate As Date = DateOfBirth.Value
         Dim FormattedDate As String = SelectedDate.ToString("MM/dd/yyyy")
+        Dim RandomVariableRememberToDelete = 2333
 
         Try
             Connect.Open()
